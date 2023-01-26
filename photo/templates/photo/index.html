@@ -1,0 +1,27 @@
+{% extends 'photo/base.html' %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+{% if messages %}
+  {% for message in messages %}
+    <p>{{ message }}</p>
+  {% endfor %}
+{% endif %}
+<div class="alert alert-danger">
+<a href="{% url 'new' %}">新規作成</a>
+<table>
+  <tr>
+    <th>タイトル</th>
+    <th>コメント</th>
+    <th>image</th>
+  </tr>
+  {% for photo in photos %}
+  <tr>
+    <td>{{ photo.title }}</td>
+    <td>{{ photo.description }}</td>
+    <td><img src="{{ photo.image.url }}" alt="写真" width="50px"></td>
+    <td><a href="{% url 'detail' photo.id %}">詳細</a></td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock content %}

@@ -1,0 +1,20 @@
+{% load django_bootstrap5 %}
+<!DOCUTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo-analysis</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+  </head>
+  <body>
+    {% if request.user.is_authenticated %} <!-- request.user.is_authenticatedでユーザ情報を確認している -->
+      <h3>こんにちは 【{{ user.username }}】さん |
+        <a href="{% url 'logout'%}">ログアウト</a>
+      </h3>
+    {% endif %}
+    {% block content %}
+    {% endblock content %}
+  </body>
+</html>

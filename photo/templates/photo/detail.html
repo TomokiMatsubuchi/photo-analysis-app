@@ -1,0 +1,13 @@
+{% extends 'photo/base.html' %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<div>
+    <h2>{{ photo.title }}</h2>
+    <p>{{ photo.description }}</p>
+    <img src="{{ photo.image.url }}" alt="写真詳細">
+</div>
+<a href="{% url 'edit' photo.id %}">編集</a>
+<a href="{% url 'delete' photo.id %}">削除</a>
+<a href="{% url 'index' %}">一覧画面へ戻る</a>
+{% endblock content %}
