@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'photo.apps.PhotoConfig',
+    'django_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +134,14 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#写真のアップロード先
+MEDIA_URL = '/media/'
+if DEBUG:
+    MEDIA_ROOT = BASE_DIR / 'media'
+else:
+    MEDIA_ROOT = f'/var/www/{BASE_DIR.name}/media'
+
+#ログイン後のリダイレクト先の設定
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = 'login'
