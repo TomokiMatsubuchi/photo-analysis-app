@@ -1,4 +1,5 @@
 {% extends 'photo/base.html' %}
+{% load django_bootstrap5 %}
 
 {% block content %}
 <h1>{{ title }}</h1>
@@ -7,19 +8,22 @@
     <p>{{ message }}</p>
   {% endfor %}
 {% endif %}
-<div class="alert alert-danger">
-<a href="{% url 'new' %}">新規作成</a>
+<form action="{% url 'img_read' %}" method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  {% bootstrap_form upload_image_form %}
+  {% bootstrap_button button_type="submit" content="読み取り開始" size="lg" %}
+</form>
 <table>
   <tr>
     <th>タイトル</th>
     <th>コメント</th>
-    <th>image</th>
+    <th>読み取り結果</th>
   </tr>
   {% for photo in photos %}
   <tr>
     <td>{{ photo.title }}</td>
     <td>{{ photo.description }}</td>
-    <td><img src="{{ photo.image.url }}" alt="写真" width="50px"></td>
+    <td>{{ photo.img_read }}</td>
     <td><a href="{% url 'detail' photo.id %}">詳細</a></td>
   </tr>
   {% endfor %}

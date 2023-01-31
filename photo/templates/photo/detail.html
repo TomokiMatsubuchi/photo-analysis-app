@@ -5,7 +5,7 @@
 <div>
     <h2>{{ photo.title }}</h2>
     <p>{{ photo.description }}</p>
-    <img src="{{ photo.image.url }}" alt="写真詳細">
+    <p>{{ photo.img_read }}</p>
 </div>
 <a href="{% url 'edit' photo.id %}">編集</a>
 <a href="{% url 'delete' photo.id %}">削除</a>
