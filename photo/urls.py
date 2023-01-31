@@ -14,6 +14,7 @@ urlpatterns = [
     path('update/<int:id>', views.update, name='update'),
     path('delete/<int:id>', views.delete, name='delete'),
     path('img_read', views.img_read, name='img_read'),
+    path('dl_excel', views.dl_excel, name='dl_excel'),
 ]
 
 
