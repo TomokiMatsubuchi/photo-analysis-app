@@ -4,3 +4,4 @@ django-environ
 pillow>=1.0
 pyocr
 django-bootstrap5
+xlsxwriter
