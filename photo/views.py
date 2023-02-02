@@ -11,8 +11,10 @@ from PIL import Image
 import sys
 import pyocr
 import pyocr.builders
-import xlsxwriter
-import io
+from openpyxl.writer.excel import save_virtual_workbook
+from django.conf import settings
+import os
+import openpyxl
 
 
 import pdb
@@ -99,24 +101,10 @@ def img_read(request):
 def dl_excel(request):
   current_user = request.user
   Photos = current_user.photo_set.all()
-  output = io.BytesIO()
-  book = xlsxwriter.Workbook(output)
-  titleformat = book.add_format({'bold': True, 'align': 'center', 'font_color': 'black', 'font_size': '14'})
-  style_text = book.add_format({ 'bold': False, 'font_size': '10'})
-  ws = book.add_worksheet('test')
-  ws.write(0, 0, 'タイトル', titleformat)
-  ws.write(0, 1, '内容', titleformat)
-  ws.write(0, 2, '読み取り内容', titleformat)
-  y = 1
-  for photo in Photos:
-    ws.write(y, 0, photo.title, style_text)
-    ws.write(y, 1, photo.description, style_text)
-    ws.write(y, 2, photo.img_read, style_text)
-    y += 1
-  book.close()
-  output.seek(0)
-  filename = "test.xlsx"
-  response = HttpResponse(output, content_type='application/vnd.ms-excel')
-  response['Content-Disposition'] = 'attachment; filename=%s' % filename
+  wb = openpyxl.load_workbook(os.path.join(settings.BASE_DIR, 'template.xlsx'))
+  pdb.set_trace()
+  ws = wb.worksheets
+  response = HttpResponse(content=save_virtual_workbook(wb), content_type='application/vnd.ms-excel')
+  response['Content-Disposition'] = 'attachment; filename="your_book.xlsx"'
   return response
 

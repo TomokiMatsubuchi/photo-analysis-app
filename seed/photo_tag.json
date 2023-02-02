@@ -1,0 +1,247 @@
+[
+  {
+    "model": "photo.tag", 
+    "pk": 1, 
+    "fields": {"name": "現金"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 2, 
+    "fields": {"name": "貯金"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 3, 
+    "fields": {"name": "委託料収入"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 4, 
+    "fields": {"name": "拡大委託料"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 5, 
+    "fields": {"name": "消費税委託料"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 6, 
+    "fields": {"name": "組合員活動委任料"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 7, 
+    "fields": {"name": "その他の事業収入"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 8, 
+    "fields": {"name": "雑収入"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 9, 
+    "fields": {"name": "受取利息"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 10, 
+    "fields": {"name": "活動賃金"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 11, 
+    "fields": {"name": "拡大賃金"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 12, 
+    "fields": {"name": "組合員活動委託費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 13, 
+    "fields": {"name": "役員手当"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 14, 
+    "fields": {"name": "事務局活動費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 15, 
+    "fields": {"name": "福利厚生費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 16, 
+    "fields": {"name": "会議費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 17, 
+    "fields": {"name": "運営活動費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 18, 
+    "fields": {"name": "諸会費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 19, 
+    "fields": {"name": "交通費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 20, 
+    "fields": {"name": "印刷費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 21, 
+    "fields": {"name": "通信費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 22, 
+    "fields": {"name": "教育文化費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 23, 
+    "fields": {"name": "共育活動費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 24, 
+    "fields": {"name": "車輌リース代"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 25, 
+    "fields": {"name": "車輌維持代"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 26, 
+    "fields": {"name": "家賃・地代"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 27, 
+    "fields": {"name": "拡大費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 28, 
+    "fields": {"name": "供給対策費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 29, 
+    "fields": {"name": "保険料"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 30, 
+    "fields": {"name": "消耗品費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 31, 
+    "fields": {"name": "器具備品費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 32, 
+    "fields": {"name": "共済費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 33, 
+    "fields": {"name": "租税公課"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 34, 
+    "fields": {"name": "法人税など"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 35, 
+    "fields": {"name": "支払手数料"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 36, 
+    "fields": {"name": "雑費"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 37, 
+    "fields": {"name": "退職金引当金"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 38, 
+    "fields": {"name": "雑損失"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 39, 
+    "fields": {"name": "横浜銀行"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 40, 
+    "fields": {"name": "グリーンチケット"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 41, 
+    "fields": {"name": "未収金"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 42, 
+    "fields": {"name": "仮払金"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 43, 
+    "fields": {"name": "立替金"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 44, 
+    "fields": {"name": "未払金"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 45, 
+    "fields": {"name": "預り金"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 46, 
+    "fields": {"name": "未払消費税"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 47, 
+    "fields": {"name": "出資金"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 48, 
+    "fields": {"name": "駐車場敷金"}
+  },
+  {
+    "model": "photo.tag", 
+    "pk": 49, 
+    "fields": {"name": "予備費"}
+  }
+]
